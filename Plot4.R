@@ -23,6 +23,7 @@ with(subtable,plot(DT,Sub_metering_1,ylab = "Energy sub merging",type = "n"))
 with(subtable,lines(DT,Sub_metering_1))
 with(subtable,lines(DT,Sub_metering_2,col="red"))
 with(subtable,lines(DT,Sub_metering_3,col="blue"))
+legend("topright", col=c("black","red","blue"),  bty="n", lty=1, lwd=2,  legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #Plot4
 with(subtable,plot(DT,Global_reactive_power,type = "l"))
 # Turn off the device
