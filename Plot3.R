@@ -17,5 +17,6 @@ with(subtable,plot(DT,Sub_metering_1,ylab = "Energy sub merging",type = "n"))
 with(subtable,lines(DT,Sub_metering_1))
 with(subtable,lines(DT,Sub_metering_2,col="red"))
 with(subtable,lines(DT,Sub_metering_3,col="blue"))
+legend("topright", col=c("black","red","blue"),  lty=1, lwd=2,  legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 # Turn off the device
 dev.off()
